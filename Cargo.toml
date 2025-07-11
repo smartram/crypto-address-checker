@@ -1,0 +1,26 @@
+[package]
+name = "crypto-address-checker"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+serde = { version = "1.0", features = ["derive"] }
+serde-wasm-bindgen = "0.4"
+js-sys = "0.3"
+base58 = "0.2"
+sha2 = "0.10"
+ripemd = "0.1"
+hex = "0.4"
+regex = "1.0"
+console_error_panic_hook = "0.1"
+blake2 = "0.10"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  "console",
+]
